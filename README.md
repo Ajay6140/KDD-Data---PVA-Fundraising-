@@ -1,4 +1,6 @@
-# KDD-Data---PVA-Fundraising-
+# KDD-Data---PVA-Fundraising & Target Marketing 
+
+
 
 (from http://kdd.ics.uci.edu/databases/kddcup98/epsilon_mirror/cup98doc.txt)
 
@@ -22,3 +24,15 @@ TYPE OF THE VARIABLES IN THE DATA SETS
 | +--------------------------------------------------------------------+
 
 The dataset includes: o 24 months of detailed PVA promotion and giving history (covering the   period 12 to 36 months prior to the "97NK" mailing) o A summary of the promotions sent to the donors over the most recent   12 months prior to the "97NK" mailing (by definition, none of these   donors responded to any of these promotions) o Summary variables reflecting each donor's lifetime giving history (e.g., total # of donations prior to "97NK" mailing, total $ amount of the donations, etc.) o Overlay demographics, including a mix of household and area level   data o All other available data from the PVA database (e.g., date of first gift, state, origin source, etc.) The fields are described in greater detail in the data dictionary file &lt;filename: cup98DIC.txt>
+
+
+# TARGET MARKETING 
+
+# Background
+
+A national veteran’s organization wishes to develop a data mining model to improve the cost-
+effectiveness of their direct marketing campaign. The organization, with its in-house database of over 13 million donors, is one of the largest direct mail fundraisers in the United States. According to their recent mailing records, the overall response rate is 5.1%. Out of those who responded (donated), the average donation is $13.00. Each mailing, which includes a gift of personalized address labels and assortments of cards and envelopes, costs $0.68 to produce and send. Using these facts, we take a sample of this dataset to develop a classification model that can effectively capture donors so that the expected net profit is maximized. Weighted sampling is used, under-representing the non-responders so that the sample has a more balanced numbers of donors and non-donors.
+
+# Data
+
+The modeling dataset is in the file pvaDataForModeling_Fall2018.csv. The data has been sampled (from the original PVA training dataset) to carry a higher proportion of donors (TARGET−B = 1) than in the original data. The amount of donation (TARGET−D) is also included but is not used in this assignment. The file contains all 480 attributes.
